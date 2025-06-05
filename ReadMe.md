@@ -15,5 +15,5 @@
 - **硬件依赖**（TODO）
 
 ## 参考项目
-[bullet] URDF 模型来源: [[url](https://github.com/unitreerobotics/avp_teleoperate)](unitreerobotics/avp_teleoperate)
-[bullet] Rviz 集成参考: [[url](https://github.com/HaofeiMa/urdf_ros2_rviz2)](HaofeiMa/urdf_ros2_rviz2)
+- URDF 模型来源: (unitreerobotics/avp_teleoperate)[https://github.com/unitreerobotics/avp_teleoperate]
+- Rviz 集成参考: (HaofeiMa/urdf_ros2_rviz2)[https://github.com/HaofeiMa/urdf_ros2_rviz2]
