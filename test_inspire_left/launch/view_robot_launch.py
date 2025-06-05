@@ -62,6 +62,20 @@ def generate_launch_description():
         output='screen',
         arguments=[urdf_file])
     
+    start_hand_controller_cmd = Node(
+        package='hand_controller',
+        executable='serial_controller',
+        name='hand_controller',
+        output='screen'
+    )
+
+    start_joint_merger_cmd = Node(
+        package='hand_controller',
+        executable='joint_merger',
+        name='joint_merger',
+        output='screen'
+    )
+
     rviz_cmd = Node(
         condition=IfCondition(use_rviz),
         package='rviz2',
@@ -85,6 +99,8 @@ def generate_launch_description():
     # Add any conditioned actions
     ld.add_action(start_joint_state_publisher_cmd)
     ld.add_action(start_robot_state_publisher_cmd)
+    ld.add_action(start_hand_controller_cmd)
+    ld.add_action(start_joint_merger_cmd)
     ld.add_action(rviz_cmd)
 
     return ld   

@@ -14,12 +14,14 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='flynews',
-    maintainer_email='flynews@todo.todo',
+    maintainer_email='flynews@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'serial_controller = hand_controller.serial_controller:main',
+            'joint_merger = hand_controller.joint_merger:main',
         ],
     },
 )
